@@ -6,7 +6,7 @@ const HistoryComponent = () => {
   useEffect(() => {
     const fetchHistory = async () => {
       try {
-        const response = await fetch("http://localhost:8000/history/");
+        const response = await fetch("http://localhost:8000/api/history/");
         const data = await response.json();
         setHistory(data);
       } catch (error) {

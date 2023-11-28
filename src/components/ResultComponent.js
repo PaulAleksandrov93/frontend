@@ -7,7 +7,7 @@ const ResultComponent = () => {
 
   const handleResult = async () => {
     try {
-      const response = await fetch("http://localhost:8000/result/", {
+      const response = await fetch("http://localhost:8000/api/result/", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

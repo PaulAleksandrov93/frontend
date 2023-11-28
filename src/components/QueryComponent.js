@@ -8,7 +8,7 @@ const QueryComponent = () => {
 
   const handleQuery = async () => {
     try {
-      const response = await fetch("http://localhost:8000/query/", {
+      const response = await fetch("http://localhost:8000/api/query/", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

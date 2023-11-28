@@ -5,7 +5,7 @@ const PingComponent = () => {
 
   const handlePing = async () => {
     try {
-      const response = await fetch("http://localhost:8000/ping/");
+      const response = await fetch("http://localhost:8000/api/ping/");
       const data = await response.json();
       setResponse(data.message);
     } catch (error) {
